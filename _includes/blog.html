@@ -42,10 +42,10 @@
               date_to_long_string}}
             </p>
             {% endif %}
-            <a href="{{post.url}}" rel="noopener noreferrer"
+            <a href="{{ post.url | relative_url }}" rel="noopener noreferrer"
               ><p class="styled-para">{{post.title | truncate: 50}}</p></a
             >
-            <a href="{{post.url}}" class="blog-read-more" rel="noopener noreferrer"
+            <a href="{{ post.url | relative_url }}" class="blog-read-more" rel="noopener noreferrer"
               >Read More <i class="fa fa-arrow-right"></i
             ></a>
           </div>

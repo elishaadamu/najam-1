@@ -27,7 +27,7 @@
         <div class="single-blog-area">
           {% if post.post_image %}
           <div class="single-blog-img">
-            <a href="{{relative_url}}/{{post.url}}" rel="noopener noreferrer"
+            <a href="{{ post.url | relative_url }}" rel="noopener noreferrer"
               ><img
                 src="{{post.post_image}}"
                 class="img-fluid"

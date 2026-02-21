@@ -29,7 +29,7 @@
           <div class="single-blog-img">
             <a href="{{ post.url | relative_url }}" rel="noopener noreferrer"
               ><img
-                src="{{post.post_image}}"
+                src="{{ post.post_image | relative_url }}"
                 class="img-fluid"
                 alt="{{post.title}}"
             /></a>

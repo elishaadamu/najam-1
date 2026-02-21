@@ -12,7 +12,7 @@ layout: default
                 <div class="single-blog-item pb-60">
                     {% if post.post_image %}
                     <div class="single-blog-img">
-                        <a href="{{ post.url | relative_url }}" rel="noopener noreferrer"><img src="{{post.post_image}}" alt="{{post.title}}"/></a>
+                        <a href="{{ post.url | relative_url }}" rel="noopener noreferrer"><img src="{{ post.post_image | relative_url }}" alt="{{post.title}}"/></a>
                     </div>
                     {% endif %}
                     <div class="single-blog-item-content">

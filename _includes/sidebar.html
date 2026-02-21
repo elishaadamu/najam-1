@@ -4,7 +4,7 @@
 	<div class="single-news-box">
 		{% if post.post_image %}
 		<div class="news-box-img pr-4">
-			<a href="{{ post.url | relative_url }}" rel="noopener noreferrer"><img src="{{post.post_image}}" alt="{{post.title}}" /></a>
+			<a href="{{ post.url | relative_url }}" rel="noopener noreferrer"><img src="{{ post.post_image | relative_url }}" alt="{{post.title}}" /></a>
 		</div>
 		{% endif %}
 		<div class="news-box-content">
